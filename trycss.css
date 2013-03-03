@@ -1,0 +1,136 @@
+ html, body
+ {
+ background-color:RGB(128,128,128);
+ }
+
+ 
+ #myToggler { display:block;  color:#fff;  font-family:Georgia,serif,Times; font-size:22px;}
+/*#myToggler ul { list-style:none;  background-color:#0232a5;}
+/*#myToggler ul li { font-family:Georgia,serif,Times; font-size:18px; padding:0.1em; background-color:#0232a5;}
+#myToggler ul li a { display:block; width:300px; height:28px; background-color:#4e69f1;  padding-left:10px;
+text-decoration:none; color:#fff; }
+#myToggler ul li a:hover{-moz-transform:rotate(-5deg); -moz-box-shadow:10px 10px 20px #000000; -webkit-transform:rotate(-5deg); -webkit-box-shadow:10px 10px 20px #000000;
+transform:rotate(-5deg); box-shadow:10px 10px 20px #000000; background-color:#179bf2; color:#000;}
+*/
+#myToggler ul { list-style:none;  background-color:RGB(128,128,128);}
+#myToggler ul li { font-family:Georgia,serif,Times; font-size:18px; padding:0.1em; background-color:#ddd;}
+#myToggler ul li { display:block; width:300px; height:28px; background-color:#ddd;  padding-left:10px;
+text-decoration:none; color:#000; }
+#myToggler  li:hover{-moz-transform:rotate(-5deg); -moz-box-shadow:10px 10px 20px #000000; -webkit-transform:rotate(-5deg); -webkit-box-shadow:10px 10px 20px #000000;
+transform:rotate(-5deg); box-shadow:10px 10px 20px #000000; background-color:#179bf2; color:#fff;}
+
+#imgevent {
+padding: 0em 0em 0em 0.5em;
+}
+
+
+ol{
+  counter-reset: li; /* Initiate a counter */
+	list-style: none; /* Remove default numbering */
+	*list-style: decimal; /* Keep using default numbering for IE6/7 */
+	font: 15px 'trebuchet MS', 'lucida sans';
+	padding: 0;
+	margin-bottom: 4em;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.rounded-list {
+	position: relative;
+	display: block;
+	padding: .4em .4em .4em 2em;
+	*padding: .4em;
+	
+	margin: .5em 0;
+	background: #ddd;
+	color: #000;
+	text-decoration: none;
+	border-radius: .3em;
+	transition: all .3s ease-out;	
+}
+
+.rounded-list :hover{
+	background: #179bf2;
+}
+
+.rounded-list :hover:before{
+    transform: rotate(360deg);	
+}
+
+.rounded-list :before{
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;	
+	left: -1.3em;
+	top: 50%;
+	margin-top: -1.3em;
+	background: #87ceeb;
+	height: 2em;
+	width: 2em;
+	line-height: 2em;
+	border: .3em solid #fff;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all .3s ease-out;
+}
+ .results {
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        margin-top: -250px;
+        
+        width: 200px;
+        padding: 5px 
+        z-index: 5;
+        border: 5px solid #999;
+        background: #ddd;
+      }
+      .results h2 {
+        font-size: 22px;
+        margin: 0 0 5px 0;
+      }
+      .results ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        height: 450px;
+        width: 200px;
+        overflow-y: scroll;
+      }
+      .results li {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .results li:nth-child(odd) {
+        background-color: #fcfcfc;
+      }
+      #more {
+        width: 100%;
+        margin: 5px 0 0 0;
+      }
+	  .ShowMap {
+-moz-box-shadow:inset -2px 4px 0px -9px #ffffff;
+-webkit-box-shadow:inset -2px 4px 0px -9px #ffffff;
+box-shadow:inset -2px 4px 0px -9px #ffffff;
+background-color:#316de6;
+-moz-border-radius:19px;
+-webkit-border-radius:19px;
+border-radius:19px;
+display:inline-block;
+color:#ffffff;
+font-family:arial;
+font-size:14px;
+font-weight:bold;
+padding:6px 24px;
+text-decoration:none;
+text-shadow:0px 0px 0px #ffffff;
+}.ShowMap:hover {
+background-color:#dfdfdf;
+}.ShowMap:active {
+position:relative;
+top:1px;
+}
